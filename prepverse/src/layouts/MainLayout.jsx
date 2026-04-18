@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import ProblemList from "../pages/ProblemList";
 
 export default function MainLayout() {
   return (
@@ -8,16 +9,15 @@ export default function MainLayout() {
       {/* Navbar */}
       <Navbar />
 
-      {/* Sidebar + Content */}
+      {/* Layout */}
       <div className="flex">
         
+        {/* Sidebar */}
         <Sidebar />
 
         {/* Main Content */}
         <div className="flex-1 p-6">
-          <h1 className="text-2xl font-semibold">
-            Welcome to PrepVerse 🚀
-          </h1>
+          <ProblemList />
         </div>
 
       </div>
